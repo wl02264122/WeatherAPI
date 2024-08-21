@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天氣</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="base">
+        <div class="weather-title">您想查詢哪裡?</div>
+        <select name="" id="choceLocation" class="weather-select">
+            <option value="Changhua" selected="selected">彰化</option>
+            <option value="Chiayi">嘉義</option>
+            <option value="Hsinchu">新竹</option>
+            <option value="Hualien">花蓮</option>
+            <option value="Kaohsiung">高雄</option>
+            <option value="Keelung">基隆</option>
+            <option value="Miaoli">苗栗</option>
+            <option value="Nantou">南投</option>
+            <option value="New Taipei">新北市</option>
+            <option value="Penghu">澎湖</option>
+            <option value="Pingtung">屏東</option>
+            <option value="Taichung">台中</option>
+            <option value="Tainan">台南</option>
+            <option value="Taipei">台北</option>
+            <option value="Taitung">台東</option>
+            <option value="Taoyuan">桃園</option>
+            <option value="Yilan">宜蘭</option>
+            <option value="Yunlin">雲林</option>
+        </select>
+        <div id="weather-name">台北</div>
+        <img src="" id="weather-img" alt="">
+        <ul class="weather-text">
+            <li>溫度：<span id="temp"></span>°C</li>
+            <li>體感：<span id="feels_like"></span>°C</li>
+            <li>最高：<span id="temp_max"></span>°C</li>
+            <li>最低：<span id="temp_min"></span>°C</li>
+        </ul>
+    </div>
+    <script src="./api.js"></script>
+</body>
+
+</html>
